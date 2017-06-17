@@ -300,6 +300,9 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {String}
  *
  */
+ function sahara_river(){
+  return "Nile River";
+ }
 
 
 /* Step 21
@@ -312,6 +315,9 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {Number}
  *
  */
+ function addNumbers(num1, num2){
+  return num1 + num2
+ }
 
 
 /* Step 22
