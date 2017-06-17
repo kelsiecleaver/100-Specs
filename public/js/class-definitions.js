@@ -263,7 +263,7 @@ var princess_leia = {
  * "cvs"
  *
  */
-
+var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 
 /* Step 19
  *
@@ -282,6 +282,14 @@ var princess_leia = {
  *                  "Golden"
  *
  */
+ var beers = {
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
+ };
 
 
 /* Step 20
