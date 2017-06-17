@@ -358,6 +358,18 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  *
  */
 
+ function drink(beerName){
+  if(beers.hasOwnProperty(beerName)){
+    if(typeof beers[beerName] === 'string'){
+      return ("This " + beerName + " is " + beers[beerName] + ".");
+    }
+    if(beers[beerName] instanceof Array){
+      return ("This " + beerName + " is " + beers[beerName][0] + " and " + beers[beerName][1] + ".");
+    }
+  }
+  return false;
+ }
+
 
 /* Step 24
  *
