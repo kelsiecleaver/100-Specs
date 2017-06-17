@@ -316,7 +316,7 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  *
  */
  function addNumbers(num1, num2){
-  return num1 + num2
+  return num1 + num2;
  }
 
 
@@ -331,7 +331,14 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {Bool}
  *
  */
-
+ function installLinux(string){
+  var isLinux = linuxFlavors.indexOf(string);
+  if(isLinux !== -1){
+    return true;
+ }else{
+  return false;
+ }
+}
 
 /* Step 23
  *
