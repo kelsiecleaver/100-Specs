@@ -385,11 +385,9 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  function browseURL(browserName){
   if(browsers.hasOwnProperty(browserName)){
     return browsers[browserName];
-
   }else{
     return false;
   }
-
  }
 
 
@@ -402,6 +400,10 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {String}
  *
  */
+ function listLivingOrgClass(){
+  return `<ul><li>${livingOrganismClassification}</li></ul>`
+
+ }
 
 
 /* Step 26
@@ -423,6 +425,9 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {String}
  *
  */
+ function favoritePlanet(){
+
+ }
 
 
 /* Step 27
