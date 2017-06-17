@@ -382,6 +382,15 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {String if true else return false}
  *
  */
+ function browseURL(browserName){
+  if(browsers.hasOwnProperty(browserName)){
+    return browsers[browserName];
+
+  }else{
+    return false;
+  }
+
+ }
 
 
 /* Step 25
