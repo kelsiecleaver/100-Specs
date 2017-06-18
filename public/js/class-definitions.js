@@ -1332,7 +1332,7 @@ if(this.flavor === "chocolate" && dayOfTheWeek === "Monday"){
 Meal.prototype.containsJunkFood = function(food){
   var junkFood = ["chips", "soda", "ice cream", "popcorn", "candy"];
   for(var i = 0; i < junkFood.length; i++)
-    if(junkFood.indexOf(this.foods[i])!== -1){
+    if(this.foods.indexOf(junkFood[i])!== -1){
       return true;
     }else{
       return false;
@@ -1394,8 +1394,8 @@ var closeAnOpenBox = new Box("Dog", true).openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
@@ -1404,8 +1404,8 @@ var closeAnOpenDoor;
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
+var redShoesSize7 = new Shoe(7, "red").findShoes();
+var blackShoesSize10 = new Shoe(10, "black").findShoes();
 
 
  /* Step 97
@@ -1414,8 +1414,8 @@ var blackShoesSize10;
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = new House(2).isATallStory(1);
+var shortStory = new House(0).isATallStory(1);
 
 
  /* Step 98
@@ -1424,8 +1424,8 @@ var shortStory;
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = new Lightbulb(true).flipSwitch("on");
+var porchLightsOff = new Lightbulb(false).flipSwitch();
 
 
  /* Step 99
@@ -1434,8 +1434,8 @@ var porchLightsOff;
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
+var cookieMonsterPwns = new Cookie("chocolate").swipedByCookieMonster("Monday");
+var cookieMonsterBlocked = new Cookie("Oreos").swipedByCookieMonster("Saturday");
 
 
  /* Step 100
@@ -1444,5 +1444,5 @@ var cookieMonsterBlocked;
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal("chips").containsJunkFood();
+var goodForYou = new Meal("fish").containsJunkFood();
