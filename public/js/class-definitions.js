@@ -1353,9 +1353,9 @@ Meal.prototype.containsJunkFood = function(food){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal("Monkey", "male").isWarmBlooded();
+var coldBloodedAnimal = new Animal("Fish", "male").isWarmBlooded();
+var notWarmOrColdAnimal = new Animal("Giraffe", "female").isWarmBlooded();
 
 
 /* Step 92
@@ -1364,8 +1364,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle("Honda", "Civic").drive("Mellanie");
+var forwardDriving = new Vehicle("KIA", "Forte").drive();
 
 
  /* Step 93
@@ -1374,8 +1374,8 @@ var forwardDriving;
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape().getType();
 
 
 /* Step 94
@@ -1384,8 +1384,8 @@ var polygon;
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box("Cat", false).openBox();
+var closeAnOpenBox = new Box("Dog", true).openBox();
 
 
  /* Step 95
