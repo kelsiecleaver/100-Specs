@@ -537,6 +537,13 @@ Person.prototype.earnMoney = function(){
  *   write
  *
  */
+ function Pen(color){
+  this.color = color;
+
+ }
+ Pen.prototype.write = function(){
+  return this.color + ": Yar Yar Yar";
+ };
 
 
 /* Step 31
