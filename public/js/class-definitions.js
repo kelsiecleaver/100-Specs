@@ -607,6 +607,15 @@ garden.grow();
  *   removePlanet
  *
  */
+ function SolarSystem(planets){
+  this.planets =[];
+ }
+ SolarSystem.prototype.addPlanet = function(){
+  this.planets.push(planets);
+ };
+ SolarSystem.prototype.removePlanet = function(){
+  this.planets.pop(planets);
+ };
 
 
 /* Step 33
