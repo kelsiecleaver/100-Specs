@@ -975,7 +975,10 @@ if(this.discoveries.length === 1){
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-
+ function Animal(species, gender){
+  this.species = species;
+  this.gender = gender;
+ }
 
 /**
  * Step 51
@@ -984,7 +987,10 @@ if(this.discoveries.length === 1){
  * @param {string} make The vehicle's make
  * @param {string} model The vehicle's model
  */
-
+function Vehicle(make, model){
+  this.make = make;
+  this.model = model;
+}
 
 /**
  * Step 52
@@ -995,7 +1001,14 @@ if(this.discoveries.length === 1){
  * value of the sides property to null.
  *
  */
-
+ function Shape(sides){
+this.sides = sides;
+if(this.sides >= 3){
+  return this.sides;
+}else{
+  return this.sides = null;
+  }
+}
 
 /**
  * Step 53
@@ -1004,7 +1017,10 @@ if(this.discoveries.length === 1){
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
-
+function Box(contents, isOpen){
+  this.contents = contents;
+  this.isOpen = true;
+}
 
 /**
  * Step 54
@@ -1012,7 +1028,9 @@ if(this.discoveries.length === 1){
  * Door class
  * @param {boolean} isOpen Whether the door is opened or closed
  */
-
+function Door(isOpen){
+  this.isOpen = true;
+}
 
 /**
  * Step 55
@@ -1021,6 +1039,10 @@ if(this.discoveries.length === 1){
  * @param {number} size  The shoe size
  * @param {string} color The shoe color
  */
+ function Shoe(size, color){
+  this.size = size;;
+  this.color = color;
+ }
 
 
 /**
