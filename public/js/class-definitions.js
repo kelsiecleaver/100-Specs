@@ -1291,6 +1291,13 @@ if(this.stories >= storiesTooTall){
  * Return true if isOn is true, false otherwise.
  *
  */
+ Lightbulb.prototype.flipSwitch = function(on){
+  if(on === "on"){
+    return this.isOn = true;
+  }else if(on !== "on"){
+    return this.isOn = false;
+  }
+ };
 
 
  /* Step 89
@@ -1300,6 +1307,13 @@ if(this.stories >= storiesTooTall){
  * and the dayOfTheWeek is "Monday", return true.  Else return false.
  *
  */
+ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
+if(this.flavor === "chocolate" && dayOfTheWeek === "Monday"){
+  return true;
+}else{
+  return false;
+}
+ };
 
 
  /* Step 90
@@ -1315,7 +1329,16 @@ if(this.stories >= storiesTooTall){
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
+Meal.prototype.containsJunkFood = function(food){
+  var junkFood = ["chips", "soda", "ice cream", "popcorn", "candy"];
+  for(var i = 0; i < junkFood.length; i++)
+    if(junkFood.indexOf(this.foods[i])!== -1){
+      return true;
+    }else{
+      return false;
+    }
 
+};
 
  /* Steps 91 to 100
  *
