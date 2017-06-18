@@ -650,6 +650,30 @@ garden.grow();
  *   marries
  *
  */
+ function PrincessLeia(name, money, age, gender, isInTrouble){
+  this.isInTrouble = null;
+  Person.call(this, name, money, age, gender, isInTrouble);
+ }
+ PrincessLeia.prototype = Object.create(Person.prototype,{
+  constructor: Person
+  });
+ PrincessLeia.prototype.shootsGun = function(){
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly";
+ };
+ PrincessLeia.prototype.getsInTrouble = function(){
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+ };
+ PrincessLeia.prototype.marries = function(loveInterest){
+  var han = "Han Solo";
+  if(loveInterest === han){
+    return true;
+  }else{
+    return "Gross!";
+  }
+
+ };
 
 
 /* Step 34
@@ -669,6 +693,18 @@ garden.grow();
  *   staplePapers
  *
  */
+ function Stapler(color, maxPapers){
+  this.color =color;
+  this.maxPapers = maxPapers;
+ }
+
+Stapler.prototype.staplePapers = function(numPaper){
+  if(numPaper <= this.maxPapers){
+    return true;
+  }else{
+    return false;
+  }
+};
 
 
 /* Step 35
