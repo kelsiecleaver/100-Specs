@@ -1051,7 +1051,9 @@ function Door(isOpen){
  * House class
  * @param {number} stories How many stories tall the house is
  */
-
+function House(stories){
+  this.stories = stories;
+}
 
 /**
  * Step 57
@@ -1059,6 +1061,9 @@ function Door(isOpen){
  * Lightbulb class
  * @param {boolean} isOn Whether the light is on or off
  */
+ function Lightbulb(isOn){
+  this.isOn = true;
+ }
 
 
 /**
@@ -1067,7 +1072,9 @@ function Door(isOpen){
  * Cookie class
  * @param {string} flavor The cookie's flavor
  */
-
+function Cookie(flavor){
+  this.flavor = flavor;
+}
 
 /**
  * Step 59
