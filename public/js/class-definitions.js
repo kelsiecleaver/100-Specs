@@ -1018,7 +1018,7 @@ if(sides >= 3){
  */
 function Box(contents, isOpen){
   this.contents = contents;
-  this.isOpen = true;
+  this.isOpen = isOpen;
 }
 
 /**
@@ -1028,7 +1028,7 @@ function Box(contents, isOpen){
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 function Door(isOpen){
-  this.isOpen = true;
+  this.isOpen = isOpen;
 }
 
 /**
@@ -1105,12 +1105,12 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox = new Box()
-var christmasPresent;
+var catBox = new Box(new Animal("Cat"), true);
+var christmasPresent = new Box("Present", false);
 
 // Create 2 doors
-var automaticDoor;
-var bankVault;
+var automaticDoor = new Door(true);
+var bankVault = new Door(false);
 
 // Create 2 shoes
 var rubySlippers;
