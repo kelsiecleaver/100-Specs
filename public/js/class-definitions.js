@@ -425,10 +425,21 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  * @return {String}
  *
  */
- function favoritePlanet(){
+
+
+
+
+
+ function favoritePlanet(currentPlanet){
+  if(planets.indexOf(currentPlanet) !== -1){
+    var randomPlanet = planets[Math.floor(Math.random()*planets.length)];
+      return ("I'm from " + currentPlanet+ ", but I wish I could go to " + randomPlanet + ".");
+    }if(planets.indexOf(currentPlanet)){
+    console.log(currentPlanet);
+    return (currentPlanet + " is not a planet!");
+    }
 
  }
-
 
 /* Step 27
  *
@@ -452,6 +463,18 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
  *   earnMoney
  *
  */
+function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+Person.prototype.spendMoney = function(){
+  this.money -=10;
+};
+Person.prototype.earnMoney = function(){
+  this.money += 10;
+};
 
 
 /* Step 28
